@@ -1,6 +1,6 @@
 <template> 
   <div class="container">
-  <h2>Submit Form</h2>
+  <h2>Contact Form</h2>
     <form @submit.prevent="submit">
       <div class="form-group" :class="{ 'form-group--error': $v.form.name.$error }">
         <label class="form__label">Name</label>
