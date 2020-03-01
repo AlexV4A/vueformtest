@@ -97,9 +97,7 @@ export default {
       if (this.$v.form.$invalid) {
         this.submitStatus = 'ERROR'
       } else {
-        // do your submit logic here
         this.submitStatus = 'PENDING';
-        console.log('CON ',this.form);
         axios.post('https://5d9f7fe94d823c0014dd323d.mockapi.io/api', this.form).then(response => {
           console.log('response ',response)
            this.submitStatus = 'OK'

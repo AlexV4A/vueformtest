@@ -33,7 +33,6 @@ describe('Form.vue', () => {
     await axios.post()
 
     wrapper.vm.$nextTick(() => {
-      console.log('111111 ',wrapper.vm.submitStatus);
       expect(wrapper.vm.submitStatus).toMatch('OK');
       done();
     });
