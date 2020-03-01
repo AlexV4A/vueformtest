@@ -26,7 +26,7 @@ describe('Form.vue', () => {
       name: 'Alex A S',
       email: 'alexsebastine@gmail.com',
       subject: 'Hai,There',
-      message: 'Going Good'
+      message: 'Doing Good'
     }
     wrapper.vm.submit() 
 

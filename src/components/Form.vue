@@ -33,7 +33,7 @@
       <div class="error" v-if="!$v.form.message.required">Message is required</div>
       <div class="error" v-if="!$v.form.message.maxLength">Maximum length of character is 500</div>
 
-      <button class="button" type="submit" :disabled="submitStatus === 'PENDING'">Submit!</button>
+      <button class="button" type="submit" :disabled="submitStatus === 'PENDING'">SEND</button>
       <p class="typo__p" v-if="submitStatus === 'OK'">Thanks for your submission!</p>
       <p class="typo__p" v-if="submitStatus === 'ERROR'">Please fill the form correctly.</p>
       <p class="typo__p" v-if="submitStatus === 'SERVERERROR'">There is some server error. Please try again later</p>
@@ -80,7 +80,6 @@ export default {
       },
 
       subject:{
-        required,
         maxLength: maxLength(100)
       },
 
